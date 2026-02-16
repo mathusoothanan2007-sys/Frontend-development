@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notice Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .notice-board {
+            background-color: #ffffff;
+            width: 400px;
+            border: 3px solid #4b0082;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .notice-header {
+            background-color: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 7px 7px 0 0;
+        }
+
+        .notice {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .notice:last-child {
+            border-bottom: none;
+        }
+
+        .notice:hover {
+            background-color: #f3e8ff;
+        }
+
+        .date {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-board">
+        <div class="notice-header">📢 Notice Board</div>
+
+        <div class="notice">
+            <strong>Exam Schedule Released</strong><br>
+            <span class="date">15 Feb 2026</span>
+        </div>
+        <div class="notice">
+            <strong>Monthly assembely</strong><br>
+            <span class="date">20 Feb 2026</span>
+        </div>
+        <div class="notice">
+            <strong>Holiday on Maha Shivaratri</strong><br>
+            <span class="date">26 Feb 2026</span>
+        </div>
+
+        <div class="notice">
+            <strong>Workshop on Web Development</strong><br>
+            <span class="date">28 Feb 2026</span>
+        </div>
+    </div>
+</body>
+</html>
