@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #e7a7a7;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(16, 15, 15, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My Photo Gallery</h2>
+
+    <div class="gallery">
+         <img src="falls.jpg"  width="200" height="200">
+        <img src="lake.jpg"  width="200" height="200">
+        <img src="pond.jpg" width="200" height="200">
+        <img src="trees.jpg" width="200" height="200">
+        
+    </div>
+
+</body>
+</html>
