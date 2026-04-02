@@ -9,3 +9,5 @@ Demo link for regestration form : https://github.com/mathusoothanan2007-sys/Fron
 Demo link for photo gallery : https://github.com/mathusoothanan2007-sys/Frontend-development/blob/main/photo%20gallery.html
 
 Demo link for validation form: https://github.com/mathusoothanan2007-sys/Frontend-development/blob/main/Validation%20Form.html
+
+Demo link for calculator :https://github.com/mathusoothanan2007-sys/Frontend-development/blob/main/calculator.html
