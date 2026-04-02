@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+<style>
+body{
+font-family: Arial;
+background:#f2f2f2;
+}
+
+.calculator{
+width:260px;
+margin:100px auto;
+padding:15px;
+background:white;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+text-align:center;
+}
+
+#display{
+width:230px;
+height:40px;
+margin-bottom:10px;
+font-size:20px;
+text-align:right;
+padding:5px;
+border:1px solid gray;
+border-radius:5px;
+}
+
+button{
+width:50px;
+height:40px;
+margin:5px;
+font-size:18px;
+border:none;
+border-radius:5px;
+background:#4CAF50;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#45a049;
+}
+
+.clear{
+background:red;
+}
+
+.operator{
+background:orange;
+}
+</style>
+
+<script>
+function insert(num){
+document.getElementById("display").value+=num;
+}
+
+function calculate(){
+let x=document.getElementById("display").value;
+let y=eval(x);
+document.getElementById("display").value=y;
+}
+
+function clr(){
+document.getElementById("display").value="";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="calculator">
+
+<input type="text" id="display">
+
+<br>
+
+<button onclick="insert('7')">7</button>
+<button onclick="insert('8')">8</button>
+<button onclick="insert('9')">9</button>
+<button class="operator" onclick="insert('+')">+</button>
+
+<br>
+
+<button onclick="insert('4')">4</button>
+<button onclick="insert('5')">5</button>
+<button onclick="insert('6')">6</button>
+<button class="operator" onclick="insert('-')">-</button>
+
+<br>
+
+<button onclick="insert('1')">1</button>
+<button onclick="insert('2')">2</button>
+<button onclick="insert('3')">3</button>
+<button class="operator" onclick="insert('*')">*</button>
+
+<br>
+
+<button onclick="insert('0')">0</button>
+<button onclick="insert('.')">.</button>
+<button onclick="calculate()">=</button>
+<button class="operator" onclick="insert('/')">/</button>
+
+<br>
+
+<button class="clear" onclick="clr()">C</button>
+
+</div>
+
+</body>
+</html>
